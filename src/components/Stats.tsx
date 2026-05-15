@@ -1,4 +1,4 @@
-import { Infinity } from 'lucide-react'
+
 
 /*
  * Stats Array
@@ -9,7 +9,7 @@ const stats = [
   { value: '10+', label: 'Projects Completed' },
   { value: '2', label: 'Years Experience' },
   { value: '3+', label: 'Technologies Mastered' },
-  { value: <Infinity className="w-8 h-8 sm:w-10 sm:h-10 mx-auto" strokeWidth={3} />, label: 'Aura' },
+  { value: '∞', label: 'Aura' },
 ]
 
 /*
