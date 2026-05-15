@@ -40,7 +40,8 @@ export default function About() {
               <img
                 src={aboutPic}
                 alt="Paul Christian Yee"
-                className="w-full aspect-[4/5] md:aspect-square lg:aspect-[4/5] object-cover object-top hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+                className="w-full aspect-[4/5] md:aspect-square lg:aspect-[4/5] object-cover object-top"
               />
             </div>
             

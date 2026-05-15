@@ -43,6 +43,7 @@ export default function Hero() {
             <img
               src={profilePic}
               alt="Profile"
+              loading="eager"
               className="w-full h-full object-cover rounded-full border-4 border-white"
             />
           </div>

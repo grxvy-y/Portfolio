@@ -31,12 +31,13 @@ export default function AnimatedScrollbar() {
       {/* Background Track */}
       <div className="fixed right-1 top-2 bottom-2 w-1.5 bg-gray-100/50 rounded-full z-[100] backdrop-blur-sm" />
 
-      {/* Animated Thumb — height is controlled by the scroll progress */}
+      {/* Animated Thumb — scaleY grows from the top as user scrolls */}
       <div
-        className="fixed right-1 top-2 w-1.5 rounded-full z-[100] bg-gradient-to-b from-gray-900 via-gray-600 to-gray-900 shadow-[0_0_8px_rgba(0,0,0,0.4)] origin-top"
+        className="fixed right-1 top-2 bottom-2 w-1.5 rounded-full z-[100] bg-gradient-to-b from-gray-900 via-gray-600 to-gray-900 shadow-[0_0_8px_rgba(0,0,0,0.4)]"
         style={{
-          bottom: `${(1 - scrollProgress) * 100}%`,
-          transition: 'bottom 0.1s ease-out',
+          transform: `scaleY(${scrollProgress})`,
+          transformOrigin: 'top',
+          transition: 'transform 0.1s ease-out',
         }}
       />
     </>

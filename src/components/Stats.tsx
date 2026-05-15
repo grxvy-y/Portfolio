@@ -29,7 +29,7 @@ export default function Stats() {
         <dl className="grid grid-cols-2 gap-x-8 gap-y-8 sm:grid-cols-4 lg:grid-cols-4 text-center">
           
           {/* Map through the stats array to render each individual stat item */}
-          {stats.map((stat, idx) => (
+          {stats.map((stat) => (
             <div 
               key={stat.label}
               className="flex flex-col gap-y-1 items-center justify-center transition-transform duration-300 hover:scale-105 hover:bg-gray-100/50 rounded-lg p-4"
